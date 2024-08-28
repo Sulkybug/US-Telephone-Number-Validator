@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgba(210, 105, 30, 0.747);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input {
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgba(240, 248, 255, 0.788);
+}
+
+.deviceBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 750px;
+  width: 380px;
+  border-radius: 15px;
+  background-color: rgba(0, 36, 0, 0.918);
+  margin: 10px;
+}
+
+#results-div {
+  height: 30%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(255, 255, 80);
+  text-align: center;
+}
+
+.screen {
+  background-color: rgb(15, 45, 71);
+  height: 94%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 10px solid black;
+}
+
+.camera {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50px;
+  position: relative;
+  bottom: 10px;
+}
+
+.carrier {
+  position: relative;
+  bottom: 40px;
+  right: 140px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.batery-signal {
+  position: relative;
+  bottom: 75px;
+  left: 135px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  width: 95%;
+  color: aliceblue;
+}
+
+.description {
+  font-size: 18px;
+}
+
+p {
+  color: aliceblue;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: 2px solid aliceblue;
+  background-color: rgba(0, 0, 255, 0);
+  color: aliceblue;
+  border-radius: 7px;
+  padding: 3px 15px 3px 15px;
+  font-size: 17px;
+  margin: 0px 5px 0px 5px;
+}
+
+button:hover {
+  border: 3px solid greenyellow;
+  cursor: pointer;
+  color: greenyellow;
+  font-size: 19px;
+}
+
+@media screen and (max-height: 770px) {
+  .deviceBox {
+    height: 600px;
+    min-height: 600px;
+    width: 320px;
+  }
+
+  #results-div {
+    height: 20%;
+  }
+
+  .camera {
+    bottom: 0px;
+  }
+
+  .carrier {
+    bottom: 25px;
+    right: 115px;
+    font-size: 9px;
+  }
+
+  .batery-signal {
+    bottom: 55px;
+    left: 115px;
+    font-size: 9px;
+  }
+  body {
+    overflow: scroll;
+  }
+}
